@@ -2,8 +2,6 @@ set(MOVEIT_LIB_NAME moveit_trajectory_processing)
 
 add_library(${MOVEIT_LIB_NAME}
   src/iterative_time_parameterization.cpp
-  src/fir_trajectory_filter.cpp
-  src/trajectory_tools.cpp
 )
 
 target_link_libraries(${MOVEIT_LIB_NAME} moveit_robot_state moveit_robot_trajectory ${catkin_LIBRARIES} ${Boost_LIBRARIES})
